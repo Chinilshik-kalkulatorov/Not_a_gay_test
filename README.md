@@ -14,13 +14,13 @@ This Python program allows a user to set up a username and password with certain
 
 ```mermaid
 graph TB
-    Start --> Enter Username
-    Enter Username --> Enter Password
-    Enter Password --> IsPassword Long Enough
-    Is Password Long Enough -- Yes --> Verify Password
-    Is Password Long Enough -- No --> Enter Password
-    Verify Password -- Yes --> Success
-    Verify Password -- No --> Enter Password
+    Start --> EnterUsername
+    EnterUsername --> EnterPassword
+    EnterPassword --> IsPasswordLongEnough
+    IsPasswordLongEnough{Is password >= 12 characters?} --> |No| EnterPassword
+    IsPasswordLongEnough --> |Yes| VerifyPassword
+    VerifyPassword{Do passwords match?} --> |No| EnterPassword
+    VerifyPassword --> |Yes| Success
     Success --> End
 ```
 
