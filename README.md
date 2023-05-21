@@ -12,8 +12,17 @@ This Python program allows a user to set up a username and password with certain
 
 ## Algoritm
 
-![mermaid-diagram-2023-05-22-020343](https://github.com/Chinilshik-kalkulatorov/Gay_test/assets/95532146/b6c8c628-e78a-44e6-bee9-b1ffbb5cdf7e)
-
+```mermaid
+graph TB
+    Start --> EnterUsername
+    EnterUsername --> EnterPassword
+    EnterPassword --> IsPasswordLongEnough
+    IsPasswordLongEnough -- Yes --> VerifyPassword
+    IsPasswordLongEnough -- No --> EnterPassword
+    VerifyPassword -- Yes --> Success
+    VerifyPassword -- No --> EnterPassword
+    Success --> End
+```
 
 
 ## Usage/Examples
