@@ -1,4 +1,4 @@
-# Python Username & Password Registration Program
+# Python Registration Program
 
 This Python program allows a user to set up a username and password with certain requirements. It serves as a basic example of how a registration system might be implemented.
 
