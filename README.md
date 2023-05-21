@@ -12,8 +12,7 @@ This Python program allows a user to set up a username and password with certain
 
 ## Algoritm
 
-![mermaid-diagram-2023-05-22-020250](https://github.com/Chinilshik-kalkulatorov/Gay_test/assets/95532146/0eac3b10-537f-4d0b-945f-55a193df0e30)
-
+![mermaid-diagram-2023-05-22-020343](https://github.com/Chinilshik-kalkulatorov/Gay_test/assets/95532146/b6c8c628-e78a-44e6-bee9-b1ffbb5cdf7e)
 
 
 
