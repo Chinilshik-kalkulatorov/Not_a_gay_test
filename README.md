@@ -12,8 +12,7 @@ This Python program allows a user to set up a username and password with certain
 
 ## Algoritm
 
-![Alt text]([![](https://mermaid.ink/img/pako:eNqFkU9rwzAMxb-K0bk9bMfAOhjNoTDGINtgkIuwlT9Q20GyGSXJd5_XJFsDgflkSb_3Hkg9aG8IMqgZu0a9PZVOpVcE5KD2-4PKXSB-F2KHlqbhqvUHvaLIl2dzAy2tK3SSpXz2rs6dj3UzsVuT_iSqW-SHB3V3r3SDjDrZyuN4dRxe_LCVveU3CT5JBvVB3FaXtWTd64_-N1yUxaCbfyLX-puwImpNIvNap2LeWZLCDiyxxdakE_Q_UAmhobRpyNLXUIXxHEoo3ZjQ2BkMlJs2eIaswrPQDjAGX1ychixwpAU6tpguamdq_AakHqhi?type=png)](https://mermaid-js.github.io/mermaid-live-editor/edit#pako:eNqFkU9rwzAMxb-K0bk9bMfAOhjNoTDGINtgkIuwlT9Q20GyGSXJd5_XJFsDgflkSb_3Hkg9aG8IMqgZu0a9PZVOpVcE5KD2-4PKXSB-F2KHlqbhqvUHvaLIl2dzAy2tK3SSpXz2rs6dj3UzsVuT_iSqW-SHB3V3r3SDjDrZyuN4dRxe_LCVveU3CT5JBvVB3FaXtWTd64_-N1yUxaCbfyLX-puwImpNIvNap2LeWZLCDiyxxdakE_Q_UAmhobRpyNLXUIXxHEoo3ZjQ2BkMlJs2eIaswrPQDjAGX1ychixwpAU6tpguamdq_AakHqhi))
-![image](https://github.com/Chinilshik-kalkulatorov/Gay_test/assets/95532146/5363135d-c778-42d0-a8fb-ba4634a86199)
+![mermaid-diagram-2023-05-22-020250](https://github.com/Chinilshik-kalkulatorov/Gay_test/assets/95532146/0eac3b10-537f-4d0b-945f-55a193df0e30)
 
 
 
