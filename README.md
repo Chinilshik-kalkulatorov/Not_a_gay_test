@@ -22,7 +22,7 @@ This Python program allows a user to set up a username and password with certain
 
 Run the script in your Python environment. The program will guide you through the registration process.
 
-```python
+```Python
 while True:
     username = input("Enter username: ")
     password = input("Enter password: ")
