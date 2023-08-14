@@ -14,14 +14,43 @@ This Python program allows a user to set up a username and password with certain
 
 ```mermaid
 graph TB
-    Start --> EnterUsername
-    EnterUsername --> EnterPassword
-    EnterPassword --> IsPasswordLongEnough
-    IsPasswordLongEnough{Is password >= 12 characters?} --> |No| EnterPassword
-    IsPasswordLongEnough --> |Yes| VerifyPassword
-    VerifyPassword{Do passwords match?} --> |No| EnterPassword
-    VerifyPassword --> |Yes| Success
-    Success --> End
+    Start --> Init[Initialize AssessmentSystem]
+    Init --> Register[Register User]
+    Register --> CheckUser[Check if username exists]
+    CheckUser --> UserExists[Username exists]
+    CheckUser --> CreateUser[Create new user]
+    CreateUser --> StudentCheck[Check if user is a student]
+    StudentCheck --> AddStudent[Add to students]
+    Init --> Login[Login User]
+    Login --> CheckLoginUser[Check if username exists]
+    CheckLoginUser --> UserNotFound[Username doesn't exist]
+    CheckLoginUser --> VerifyPassword[Verify password]
+    VerifyPassword --> IncorrectPassword[Password is incorrect]
+    VerifyPassword --> SuccessfulLogin[Login successful]
+    Init --> AddCourse[Add Course]
+    AddCourse --> TeacherCheck1[Check if user is a teacher]
+    TeacherCheck1 --> NotATeacher1[User is not a teacher]
+    TeacherCheck1 --> CourseExistsCheck[Check if course exists]
+    CourseExistsCheck --> CourseExists[Course exists]
+    CourseExistsCheck --> CreateCourse[Create new course]
+    Init --> AddScore[Add Score to Student]
+    AddScore --> TeacherCheck2[Check if user is a teacher]
+    TeacherCheck2 --> NotATeacher2[User is not a teacher]
+    TeacherCheck2 --> StudentExistsCheck[Check if student exists]
+    StudentExistsCheck --> StudentNotFound[Student doesn't exist]
+    StudentExistsCheck --> CourseAndAssessmentCheck[Check course and assessment]
+    CourseAndAssessmentCheck --> InvalidCourseOrAssessment[Invalid course or assessment]
+    CourseAndAssessmentCheck --> AddStudentScore[Add score to student]
+    Init --> ViewScores[View Student Scores]
+    ViewScores --> StudentCheck2[Check if user is a student]
+    StudentCheck2 --> NotAStudent[User is not a student]
+    StudentCheck2 --> RetrieveScores[Retrieve student scores]
+    Init --> GenerateReports[Generate Reports]
+    GenerateReports --> CheckStudentExists[Check if student exists]
+    CheckStudentExists --> StudentNotFound2[Student doesn't exist]
+    CheckStudentExists --> CreateReports[Create overall and detailed reports]
+    CreateReports --> End[End]
+
 ```
 
 
