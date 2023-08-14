@@ -1,16 +1,34 @@
-# Python Registration Program
+# Assessment Management System
 
-This Python program allows a user to set up a username and password with certain requirements. It serves as a basic example of how a registration system might be implemented.
-
-
+## Overview
+The Assessment Management System is designed to manage and track student assessment results for an international college. The system provides functionalities for user registration, login, course addition, score management, and report generation.
 
 ## Features
-- Username input: Allows the user to set their desired username.
-- Password input: Allows the user to set their password, ensuring  it's at least 12 characters long.
-- Password verification: Asks the user to re-enter their password, verifying they know it, and provides opportunity for correction in case of mismatch.
 
+### User Registration
+- Allows both students and teachers to register with a unique username and password.
+- Automatically categorizes users as either a student or a teacher based on registration details.
 
-## Algoritm
+### User Login
+- Users can log in using their registered username and password.
+- Ensures data security by verifying user credentials before granting access.
+
+### Course Management
+- Teachers can add new courses along with their respective assessments.
+- Each course can have multiple assessments.
+
+### Score Management
+- Teachers can add scores for students based on their assessments.
+- Scores can be added for individual assessments as well as combined totals for their courses.
+
+### Report Generation
+- Provides two types of reports:
+  1. Overall Performance Report: Shows the average score of a student across all assessments in a course.
+  2. Detailed Course Report: Provides a breakdown of scores for each assessment in a course.
+
+## Algorithm
+
+The flow of operations within the `AssessmentSystem` class is visualized using the following Mermaid diagram:
 
 ```mermaid
 graph TB
@@ -54,27 +72,6 @@ graph TB
 ```
 
 
-## Usage/Examples
-
-
-Run the script in your Python environment. The program will guide you through the registration process.
-
-```Python
-while True:
-    username = input("Enter username: ")
-    password = input("Enter password: ")
-
-    if len(password) < 12:  # Check password length
-        print("Password must be at least 12 characters. Please try again.")
-        continue  # Return to start of loop
-
-    password_check = input("Re-enter your password: ")
-
-    if password == password_check:  # Check password match
-        print("Registration successful.")
-        break
-    else:
-        print("Passwords do not match. Please try again.")
 ```
 
 
