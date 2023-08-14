@@ -71,9 +71,22 @@ graph TB
 
 ```
 
-
 ```
+Examples
+Пример регистрации, добавления курса и оценок:
 
+python
+Copy code
+system = AssessmentSystem()
+system.register("Mr Smith", "teacher_pass", "teacher")
+system.register("John Doe", "student_pass", "student")
+system.login("Mr Smith", "teacher_pass")
+system.add_course("Math", ["Assessment1", "Assessment2"])
+system.add_score("2", "Math", "Assessment1", 85)
+system.add_score("2", "Math", "Assessment2", 90)
+reports = system.generate_reports("2")
+print(reports)
+```
 
 ## Run Locally
 
